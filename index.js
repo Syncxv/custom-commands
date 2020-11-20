@@ -321,8 +321,32 @@ module.exports = class ImgCmd extends Plugin {
           };
         },
       });
-
-      
+//https://cdn.discordapp.com/attachments/768495779101802518/778652259399499796/IMG_20201102_105005.jpg
+      powercord.api.commands.registerCommand({
+        command: "tom-is-cool",
+        aliases: ["save-to-phone"],
+        description: "thats gay ok",
+        usage: "{c}",
+        executor: () => {
+          return {
+            send: true,
+            result: "https://cdn.discordapp.com/attachments/768495779101802518/778652259399499796/IMG_20201102_105005.jpg",
+          };
+    },  
+    });
+    //https://cdn.discordapp.com/attachments/719798258322636801/779229029898256414/unknown.png
+    powercord.api.commands.registerCommand({
+      command: "tom-fbi",
+      aliases: ["fbi"],
+      description: "thats gay ok",
+      usage: "{c}",
+      executor: () => {
+        return {
+          send: true,
+          result: "https://cdn.discordapp.com/attachments/719798258322636801/779229029898256414/unknown.png",
+        };
+  },  
+  });
     }
     
     //const win = await popout
@@ -352,6 +376,7 @@ module.exports = class ImgCmd extends Plugin {
       powercord.api.commands.unregisterCommand("pepewot");
       powercord.api.commands.unregisterCommand("seceret-message");
       powercord.api.commands.unregisterCommand("slap-the-shit-out-you");
+      powercord.api.commands.unregisterCommand("tom-is-cool");
       
     }
     
