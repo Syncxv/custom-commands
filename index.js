@@ -312,12 +312,12 @@ module.exports = class ImgCmd extends Plugin {
       powercord.api.commands.registerCommand({
         command: "linusfeet",
         aliases: ["feetlinus", "linus-is-notgay"],
-        description: "thats gay ok",
+        description: "thats not gay ok",
         usage: "{c}",
         executor: () => {
           return {
             send: true,
-            result: "https://cdn.discordapp.com/emojis/402867992930680833.png?v=1",
+            result: "https://cdn.discordapp.com/emojis/755438162192498738.png?v=1",
           };
         },
       });
