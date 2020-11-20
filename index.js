@@ -347,6 +347,57 @@ module.exports = class ImgCmd extends Plugin {
         };
   },  
   });
+  powercord.api.commands.registerCommand({
+    command: "dantdm",
+    aliases: ["danny_boi"],
+    description: "thats gay ok",
+    usage: "{c} <number>",
+    executor: (args) => {
+      if (!args[0]){
+        return{result: "AYE NIGGA ITS LIKE THSI `.dantdm 1` or `.dantdm 2`"}
+      }
+      if (args[0] == "1"){
+        return {
+          send: true,
+          result: "https://cdn.discordapp.com/attachments/768495779101802518/779359735677321268/brave_qz0fHOeFxS.png",
+        };
+      }
+      if (args[0] == "2"){
+      return {
+        send: true,
+        result: "https://cdn.discordapp.com/attachments/768495779101802518/779359736331108393/brave_7sUVrod36q.png",
+        
+      };
+    }
+    
+    },  
+    });
+    powercord.api.commands.registerCommand({
+      command: "person-below-has-child-porn",
+      aliases: ["person-below-gay"],
+      description: "this is fine",
+      usage: "{c}",
+      executor: () => {
+        return {
+          send: true,
+          result: "https://cdn.discordapp.com/attachments/768495779101802518/779387395883401219/msedge_366wjkYQpL.png",
+        };
+  },  
+  });
+  powercord.api.commands.registerCommand({
+    command: "chacharealsmooth",
+    aliases: ["smooth", "real-smooth"],
+    description: "this is not fine",
+    usage: "{c}",
+    executor: () => {
+      return {
+        send: true,
+        result: "https://cdn.discordapp.com/attachments/719798258322636801/779251013135630346/3cagil.png",
+      };
+},  
+});
+  //https://cdn.discordapp.com/attachments/719798258322636801/779251013135630346/3cagil.png
+    //https://cdn.discordapp.com/attachments/768495779101802518/779387395883401219/msedge_366wjkYQpL.png
     }
     
     //const win = await popout
@@ -377,6 +428,9 @@ module.exports = class ImgCmd extends Plugin {
       powercord.api.commands.unregisterCommand("seceret-message");
       powercord.api.commands.unregisterCommand("slap-the-shit-out-you");
       powercord.api.commands.unregisterCommand("tom-is-cool");
+      powercord.api.commands.unregisterCommand("dantdm")
+      powercord.api.commands.unregisterCommand("person-below-has-child-porn")
+      powercord.api.commands.unregisterCommand("chacharealsmooth")
       
     }
     
