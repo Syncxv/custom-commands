@@ -16,13 +16,23 @@ module.exports = class ImgCmd extends (
     powercord.api.commands.registerCommand({
       command: "shag",
       description: "wtf is above me scoob mmee",
-      usage: "{c}",
-      executor: () => {
-        return {
-          send: true,
-          result:
-            "https://cdn.discordapp.com/attachments/650353540056743947/746213651362611200/Discord_u4V85MtbwG.png",
-        };
+      usage: "{c} <1or2>",
+      executor: (args) => {
+        if (!args[0]) return { result: "do `.shag 1` or `.shag 2`" };
+        if (args[0] == "1") {
+          return {
+            send: true,
+            result:
+              "https://cdn.discordapp.com/attachments/650353540056743947/746213651362611200/Discord_u4V85MtbwG.png",
+          };
+        }
+        if (args[0] == "2") {
+          return {
+            send: true,
+            result:
+              "https://cdn.discordapp.com/attachments/768495779101802518/781064257974173716/Discord_RGUGsYTVd4.png",
+          };
+        }
       },
     });
     powercord.api.commands.registerCommand({
@@ -287,7 +297,7 @@ module.exports = class ImgCmd extends (
           "||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||||||||||";
         return {
           send: true,
-          result: `${stuff[0]}${nice}${stuff[1]}`,
+          result: `${stuff[0]} ${nice} ${stuff[1]}`,
         };
       },
     });
@@ -504,6 +514,31 @@ module.exports = class ImgCmd extends (
         };
       },
     });
+    powercord.api.commands.registerCommand({
+      command: "excuse-me-wtf",
+      aliases: ["wtf"],
+      description: "this is not not not not  not fine",
+      usage: "{c}",
+      executor: () => {
+        return {
+          send: true,
+          result: "https://i.imgur.com/UKuSpmQ.png",
+        };
+      },
+    });
+    powercord.api.commands.registerCommand({
+      command: "tom-is-crazy",
+      aliases: ["move"],
+      description: "this is not fine",
+      usage: "{c}",
+      executor: () => {
+        return {
+          send: true,
+          result:
+            "https://cdn.discordapp.com/attachments/719798258322636801/781004716519850014/unknown.png",
+        };
+      },
+    });
     //https://cdn.discordapp.com/attachments/719798258322636801/779251013135630346/3cagil.png
     //https://cdn.discordapp.com/attachments/768495779101802518/779387395883401219/msedge_366wjkYQpL.png
   }
@@ -541,6 +576,8 @@ module.exports = class ImgCmd extends (
     powercord.api.commands.unregisterCommand("cought-gay");
     powercord.api.commands.unregisterCommand("this-post-right-here-officer");
     powercord.api.commands.unregisterCommand("hold-up");
+    powercord.api.commands.unregisterCommand("excuse-me-wtf");
+    powercord.api.commands.unregisterCommand("tom-is-crazy");
   }
 };
 // /https://i.imgur.com/i0jCTM8.png
